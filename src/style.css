@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root{
+    --primary-color:#EC4899;
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ }
+ .pagewrap{
+    display: flex;
+
+    /*vertically stack children*/
+    flex-direction: column;
+
+    /* expand to take full height of page */
+    /* min-height overrides both height & max-height */
+    min-height: 100vh; 
+
+  } 
+
+.navigation{
+
+  background-color: var(--primary-color);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    /* margin: auto; */
+    box-shadow: 0 1px 4px rgba(47, 138, 230, 0.15);
+    padding:1.5rem 2rem 1.5rem 5rem;
+    max-width: auto;
+    /* color: white; */
+}
+.heading{
+    color: white;
+}
+.details{
+    font-size:large ;
+    max-width: 1200px;
+    margin: auto;
+    padding:1.5rem 2rem 0.5rem 5rem;
+    
+}
+.input-container{
+    padding: 0rem 0rem;
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 1px 18px rgba(146,161,176,.15);
+    margin: 1rem 40rem 0rem 30rem;
+    min-height:10vh;
+}
+#bill-amt{
+    border: "none";
+    box-Shadow: 10px 10px 25px #E5E7EB;
+    padding: 1rem 2rem 1rem 2rem;
+    font-Size: 1rem;
+    margin: 1rem;
+    border-Radius: 0.5rem;
+}
+#cash-amt{
+    border: "none";
+    box-Shadow: 10px 10px 25px #E5E7EB;
+    padding: 1rem 2rem 1rem 2rem;
+    font-Size: 1rem;
+    margin: 1rem;
+    border-Radius: 0.5rem;
+}
+#btn-nxt{
+    border: "none";
+    box-Shadow: 10px 10px 25px #E5E7EB;
+    padding: 1rem 2rem 1rem 2rem;
+    font-Size: 1rem;
+    margin: 1rem;
+    border-Radius: 0.5rem;
+}
+#btn-cal{
+    border: "none";
+    box-Shadow: 10px 10px 25px #E5E7EB;
+    padding: 1rem 2rem 1rem 2rem;
+    font-Size: 1rem;
+    margin: 1rem;
+    border-Radius: 0.5rem;
+}
+#show-table{
+    background-color: var(--primary-color);
+    border-collapse: collapse;
+    box-shadow: 2px 2px 15px #9aa494;
+    margin: 1rem 0;
+    margin-bottom: 8em;
+}
+#show-table td, th {
+    border: 2px solid white;
+    padding: 1rem;
+    color: white;
+    
+}
+.footer{
+    background-color:var(--light-gray);
+    background-color: white;
+    padding:2rem 0rem;
+    text-align: center;
+    color:black;
+    border-top-right-radius:1rem;
+    box-shadow: 0 1px 25px #E5E7EB;
+    margin-top: 3rem;
+    display:flexbox;
+    flex-direction: coloumn;
+}
+main{
+    flex-grow: 1;
+  }
+
+ .footer .footer-header{
+    font-weight: bold;
+    font-size: large;
+    padding-inline-start:1px;
+}
+.footer .links{
+    color:black;
+}
+
+.footer ul{
+    padding-left:0px;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0.25rem;
+}
+
+.footer-icon{
+    width:2rem;
+} 
