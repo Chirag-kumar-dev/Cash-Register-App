@@ -14,6 +14,7 @@ var notesArray=[2000,500,100,20,10,5,1]
 var numberOfNotes=[0,0,0,0,0,0,0]
 
 function calculateAmountLeft(returnAmount){
+    numberOfNotes=[0,0,0,0,0,0,0]
     for(let i=0;i<notesArray.length;i++){
         const remainNotes=Math.trunc(returnAmount/notesArray[i])
         returnAmount=returnAmount % notesArray[i];
@@ -24,6 +25,11 @@ function calculateAmountLeft(returnAmount){
 function calculateAmount(){
     const billValue=Number(billAmount.value);
     const cashValue=Number(cashAmount.value);
+    if(billValue==cashValue){
+        divTable.style.display="none";
+        message.innerHTML="No Change Required as BillAmount and Cash Given are equal";
+        return;
+    }
     if (billValue>cashValue || ((billValue || cashValue)<=0)){
         message.style.display="flex"
         message.innerHTML="Please Enter More Cash Amount and Entered value should be positive.Thanks!!"
